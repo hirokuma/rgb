@@ -1,0 +1,10 @@
+dump/
+*.contract/
+*.dump/
+/*/**/*.issuer
+*.rgb
+*.psbt
+*.pfab
+Transfer.yaml
+DemoToken-work.yaml
+data*/

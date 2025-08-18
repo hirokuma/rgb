@@ -1,0 +1,24 @@
+consensus: bitcoin
+testnet: true
+issuer:
+  codexId: 7C15w3W1-L0T~zXw-Aeh5~kV-Zquz729-HXQFKQW-_5lX9O8
+  version: 0
+  checksum: AYkSrg
+name: DemoTokenRegtest
+method: issue
+timestamp: "2025-08-18T12:34:56+09:00"
+
+global:
+  - name: ticker
+    verified: DEMO
+  - name: name
+    verified: Demo Token
+  - name: precision
+    verified: centiMilli
+  - name: issued
+    verified: 10000
+
+owned:
+  - name: balance
+    seal: OUTPOINT
+    data: 10000
