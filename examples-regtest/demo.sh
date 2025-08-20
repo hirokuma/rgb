@@ -69,3 +69,9 @@ $RGB_2 accept -w ${USER2} ${EXAMDIR}/transfer.rgb
 
 $RGB state -goa -w ${USER1}
 $RGB_2 state -go -w ${USER2}
+
+# "next": "signer"
+PSBT=`base64 -w0 ${EXAMDIR}/transfer.psbt`
+bitcoin-cli decodepsbt ${PSBT}
+bitcoin-cli analyzepsbt ${PSBT}
+
